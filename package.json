@@ -1,0 +1,20 @@
+{
+	"name": "sourcelabdemo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx playwright test",
+		"test-all-browsers": "npx playwright test --browser=all",
+		"codegen": "npx playwright codegen --save-storage=slDemoAuth.json https://www.saucedemo.com/",
+		"codegen-auth": "npx playwright codegen --load-storage=slDemoAuth.json https://www.saucedemo.com/inventory.html",
+		"test debug": "npx playwright test -g 'Checked locked out user' --debug"
+	},
+	"keywords": [],
+	"author": "Kalana Herath",
+	"license": "ISC",
+	"dependencies": {
+		"@playwright/test": "1.17.2",
+		"playwright": "1.17.2"
+	}
+}
